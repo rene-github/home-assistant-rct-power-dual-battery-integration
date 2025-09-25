@@ -229,12 +229,12 @@ battery_sensor_entity_descriptions: list[RctPowerSensorEntityDescription] = [
         device_class=SensorDeviceClass.TIMESTAMP,
         get_native_value=get_first_api_response_value_as_timestamp,
     ),
-    RctPowerSensorEntityDescription(
-        get_device_info=get_battery_device_info,
-        key="battery_placeholder[0].bms_sn",
-        name="Battery[0] Management System Serial Number",
-        update_priority=EntityUpdatePriority.STATIC,
-    ),
+    # RctPowerSensorEntityDescription(
+    #     get_device_info=get_battery_device_info,
+    #     key="battery_placeholder[0].bms_sn",
+    #     name="Battery[0] Management System Serial Number",
+    #     update_priority=EntityUpdatePriority.STATIC,
+    # ),
     RctPowerSensorEntityDescription(
         get_device_info=get_battery_device_info,
         key="battery_placeholder[0].bms_software_version",
